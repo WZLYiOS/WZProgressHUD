@@ -1,0 +1,7 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'WZProgressHUD_Example' do
+  pod 'WZProgressHUD', :path => '../'
+end

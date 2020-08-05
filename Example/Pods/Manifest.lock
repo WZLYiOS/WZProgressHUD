@@ -1,0 +1,18 @@
+PODS:
+  - WZProgressHUD (1.0.1):
+    - WZProgressHUD/Source (= 1.0.1)
+  - WZProgressHUD/Source (1.0.1)
+
+DEPENDENCIES:
+  - WZProgressHUD (from `../`)
+
+EXTERNAL SOURCES:
+  WZProgressHUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WZProgressHUD: facc017acc4488b9105da65a17b59ae59e13ba23
+
+PODFILE CHECKSUM: 2460b5d2f9311fd304ba4b17b0a159a6c11ec8cb
+
+COCOAPODS: 1.9.1
