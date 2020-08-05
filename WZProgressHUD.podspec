@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WZProgressHUD'
   s.version          = '1.1.0'
-  s.summary          = 'WZProgressHUD.'
+  s.summary          = 'WZProgressHUD'
   s.homepage         = 'https://github.com/WZLYiOS/WZProgressHUD'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LiuSky' => '327847390@qq.com' }
