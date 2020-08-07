@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZProgressHUD'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'WZProgressHUD'
   s.homepage         = 'https://github.com/WZLYiOS/WZProgressHUD'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
     ss.framework    = 'QuartzCore'
   end
   
-  s.subspec 'Binary' do |ss|
-    ss.vendored_frameworks = "Carthage/Build/iOS/Static/WZProgressHUD.framework"
-    ss.resources    = 'WZProgressHUD/**/*.bundle'
-  end
+#  s.subspec 'Binary' do |ss|
+#    ss.vendored_frameworks = "Carthage/Build/iOS/Static/WZProgressHUD.framework"
+#    ss.resources    = 'WZProgressHUD/**/*.bundle'
+#  end
   
 end
