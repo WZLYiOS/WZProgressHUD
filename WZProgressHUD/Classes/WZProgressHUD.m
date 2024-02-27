@@ -70,7 +70,7 @@ static const CGFloat WZProgressHUDLabelSpacing = 8.0f;
     
     static WZProgressHUD *sharedView;
 #if !defined(WZ_APP_EXTENSIONS)
-    dispatch_once(&once, ^{ sharedView = [[self alloc] initWithFrame:[[[UIApplication sharedApplication] delegate] window].bounds]; });
+    dispatch_once(&once, ^{ sharedView = [[self alloc] initWithFrame:[UIApplication sharedApplication].windows.firstObject.bounds]; });
 #else
     dispatch_once(&once, ^{ sharedView = [[self alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; });
 #endif
@@ -656,7 +656,7 @@ static const CGFloat WZProgressHUDLabelSpacing = 8.0f;
     double animationDuration = 0.0;
 
 #if !defined(WZ_APP_EXTENSIONS) && TARGET_OS_IOS
-    self.frame = [[[UIApplication sharedApplication] delegate] window].bounds;
+    self.frame = [UIApplication sharedApplication].windows.firstObject.bounds;
     UIInterfaceOrientation orientation = UIApplication.sharedApplication.statusBarOrientation;
 #elif !defined(WZ_APP_EXTENSIONS) && !TARGET_OS_IOS
     self.frame= [UIApplication sharedApplication].keyWindow.bounds;
@@ -1230,7 +1230,7 @@ static const CGFloat WZProgressHUDLabelSpacing = 8.0f;
     
     // Update frames
 #if !defined(WZ_APP_EXTENSIONS)
-    CGRect windowBounds = [[[UIApplication sharedApplication] delegate] window].bounds;
+    CGRect windowBounds = [UIApplication sharedApplication].windows.firstObject.bounds;
     _controlView.frame = windowBounds;
 #else
     _controlView.frame = [UIScreen mainScreen].bounds;

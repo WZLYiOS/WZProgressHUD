@@ -12,6 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+     UIImage *xxx = [UIImage imageNamed:@"WZProgressHUD.bundle/info"];
     // Override point for customization after application launch.
     return YES;
 }
