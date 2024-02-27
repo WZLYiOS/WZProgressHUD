@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.default_subspec = 'Source'
   
+  
   s.subspec 'Source' do |ss|
     ss.source_files = 'WZProgressHUD/Classes/*.{h,m}'
     ss.resources    = 'WZProgressHUD/**/*.bundle'
